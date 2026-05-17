@@ -56,7 +56,8 @@ vet:
 clean:
 	@echo "Cleaning..."
 	rm -f $(BINARY) $(BINARY)-linux-amd64
-	rm -f coverage.out
+	rm -f coverage.out coverage.html
+	rm -rf release/
 
 ## coverage: Generate test coverage report
 coverage:
